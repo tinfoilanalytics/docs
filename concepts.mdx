@@ -1,0 +1,115 @@
+---
+title: 'Core Concepts'
+description: 'Understanding Trusted Execution Environments and Confidential Computing'
+---
+
+## What is Confidential Computing?
+
+Confidential computing protects data in use by performing computations in a hardware-based Trusted Execution Environment (TEE). This technology provides a level of assurance and verification that is impossible to achieve with traditional cloud computing.
+
+## Trusted Execution Environments (TEEs)
+
+TEEs are hardware security features that create hardware-level isolation for programs. They provide:
+
+<CardGroup cols={2}>
+  <Card title="Hardware Isolation" icon="microchip">
+    Complete separation from the host operating system and other processes
+  </Card>
+  <Card title="Memory Encryption" icon="lock">
+    Automatic encryption of all data in memory
+  </Card>
+  <Card title="Attestation" icon="shield-check">
+    Cryptographic proof of the environment's authenticity
+  </Card>
+  <Card title="Integrity Verification" icon="code-compare">
+    Confirmation that code hasn't been tampered with
+  </Card>
+</CardGroup>
+
+## How Tinfoil Uses TEEs
+
+Tinfoil leverages TEEs to provide three core security guarantees:
+
+### 1. Confidentiality
+
+<Note>
+Your data stays encrypted end-to-end using hardware-level safeguards and is never accessible to anyone other than you — not even to Tinfoil.
+</Note>
+
+- Data remains encrypted in memory
+- Hardware-enforced isolation from other processes
+- Protected from cloud provider access
+- Secure from administrative access
+
+### 2. Integrity
+
+The integrity of your workloads is guaranteed through:
+
+<Steps>
+  1. **Hardware Verification** - Prove authenticity of NVIDIA, Intel, or AMD hardware
+  2. **Configuration Validation** - Verify proper security settings
+  3. **Code Measurement** - Unique identification of running code
+  4. **Automatic Attestation** - Real-time verification by user devices
+</Steps>
+
+### 3. Transparency
+
+Tinfoil provides verifiable code execution:
+
+- Source code published on GitHub
+- Automatic compilation through GitHub Actions
+- Cryptographic measurements logged with Sigstore
+- Real-time verification of running code
+- Public audit trail of all deployments
+
+## Comparison with Traditional Cloud
+
+<CardGroup cols={2}>
+  <Card title="Traditional Cloud" icon="cloud">
+    - Relies on virtualization
+    - Provider has workload visibility
+    - Trust-based security model
+    - Limited verification capabilities
+  </Card>
+  <Card title="Tinfoil Enclaves" icon="shield">
+    - Hardware-level isolation
+    - Zero visibility into workloads
+    - Verifiable security model
+    - Cryptographic attestation
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+Ready to dive deeper? Check out:
+
+<CardGroup cols={2}>
+  <Card
+    title="Quick Start Guide"
+    icon="rocket"
+    href="/quickstart"
+  >
+    Deploy your first secure workload
+  </Card>
+  <Card
+    title="Private Inference"
+    icon="brain"
+    href="/guides/private-inference"
+  >
+    Learn about secure AI deployment
+  </Card>
+  <Card
+    title="Verification Guide"
+    icon="check-double"
+    href="/guides/verification"
+  >
+    Understand our verification process
+  </Card>
+  <Card
+    title="API Reference"
+    icon="code"
+    href="/api-reference/introduction"
+  >
+    Integrate with your applications
+  </Card>
+</CardGroup>

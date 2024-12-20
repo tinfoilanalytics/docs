@@ -1,6 +1,6 @@
 ---
-title: Introduction
-description: 'Welcome to the home of your new documentation'
+title: 'Introduction'
+description: 'Welcome to Tinfoil - Replace trust with provable security'
 ---
 
 <img
@@ -14,58 +14,96 @@ description: 'Welcome to the home of your new documentation'
   alt="Hero Dark"
 />
 
-## Setting up
+## What is Tinfoil?
 
-The first step to world-class documentation is setting up your editing environments.
+Tinfoil enables you to run AI workloads with the security of on-prem infrastructure and the convenience of cloud — backed by hardware-enforced confidential computing.
+
+By using Tinfoil enclaves, you can:
+- Run AI workloads with complete data privacy through hardware-level safeguards
+- Let users cryptographically verify the code running in the secure enclave
+- Deploy with cloud convenience while maintaining on-prem level security
+- Gain insights while maintaining end-to-end privacy
 
 <CardGroup cols={2}>
   <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
+    title="Quick Start"
+    icon="rocket"
+    href="/quickstart"
   >
-    Get your docs set up locally for easy development
+    Deploy your first secure AI workload
   </Card>
   <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
+    title="Core Concepts"
+    icon="book"
+    href="/concepts"
   >
-    Preview your changes before you push to make sure they're perfect
+    Learn about confidential computing and TEEs
+  </Card>
+  <Card
+    title="Try Demo"
+    icon="play"
+    href="https://tinfoil.sh/chat"
+  >
+    Experience our secure chat demo
+  </Card>
+  <Card
+    title="API Reference"
+    icon="code"
+    href="/api-reference/introduction"
+  >
+    Integrate Tinfoil into your applications
   </Card>
 </CardGroup>
 
-## Make it yours
+## Key Features
 
-Update your docs to your brand and add valuable content for the best user conversion.
+### Hardware-Backed Security
+
+While standard cloud providers rely on virtualization that allows them visibility into your workloads, Tinfoil's enclaves create true hardware-level isolation. Your users' private data remains protected not only from the cloud provider but also from intermediate services and even your own organization.
+
+### Verifiable Privacy
+
+Users can verify runtime attestation in real-time and confirm their data remains private:
+
+<Steps>
+  1. Code integrity is verified against public GitHub repositories
+  2. Enclave attestation confirms secure hardware configuration
+  3. Binary verification ensures code matches transparency logs
+</Steps>
+
+### Cloud-Native Deployment
+
+Get the best of both worlds:
+- Deploy with the ease of cloud infrastructure
+- Maintain complete control over your data
+- Prevent vendor lock-in
+- Scale seamlessly while maintaining security
+
+### Near-Native Performance
+
+Powered by NVIDIA Hopper and Blackwell architectures, Tinfoil delivers:
+- Near-identical performance to unencrypted workloads
+- Support for large AI models
+- Hardware-accelerated encryption
+- Minimal overhead for secure operations
+
+## Getting Started
+
+Ready to secure your AI workloads? Choose your path:
 
 <CardGroup cols={2}>
   <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
+    title="Deploy Your Own"
+    icon="server"
+    href="/quickstart"
   >
-    Customize your docs to your company's colors and brands
+    Follow our quickstart guide to deploy your first secure workload
   </Card>
   <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
+    title="Try the Demo"
+    icon="messages"
+    href="https://tinfoil.sh/chat"
   >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/components/accordion"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
+    Experience our secure chat demo powered by Llama 3.2-1B
   </Card>
 </CardGroup>
